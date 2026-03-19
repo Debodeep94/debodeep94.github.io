@@ -1,61 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Debodeep Banerjee</title>
-<link rel="stylesheet" href="styles.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Debodeep Banerjee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="noise"></div>
 
-<div class="container">
+  <header class="site-header">
+    <div class="logo">DB</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#work">Research</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+      <a href="Resume_new.pdf" target="_blank" class="nav-btn">CV</a>
+    </nav>
+  </header>
 
-    <aside class="sidebar">
-        <img src="me_1.JPG" class="profile">
+  <main>
+    <section class="hero">
+      <div class="hero-left">
+        <p class="eyebrow">PhD Researcher · Artificial Intelligence</p>
+        <h1>
+          Debodeep<br />
+          Banerjee
+        </h1>
+        <p class="hero-text">
+          I work at the intersection of <span>human-centered AI</span>,
+          <span>machine learning</span>, and <span>decision making</span> —
+          building intelligent systems that are not only powerful, but meaningful.
+        </p>
 
-        <h2>Debodeep Banerjee</h2>
-        <p class="role">PhD Researcher in AI</p>
-
-        <nav>
-            <a href="#">Home</a>
-            <a href="Resume_new.pdf" target="_blank">CV</a>
-            <a href="courses.html">Courses</a>
-            <a href="https://thoughtsinnib.wordpress.com/">Blog</a>
-        </nav>
-
-        <div class="social">
-            <a href="https://github.com/Debodeep94">GitHub</a>
-            <a href="https://linkedin.com">LinkedIn</a>
-            <a href="mailto:debodeepbanerjee33@gmail.com">Email</a>
+        <div class="hero-actions">
+          <a href="Resume_new.pdf" target="_blank" class="btn btn-primary">View CV</a>
+          <a href="#about" class="btn btn-secondary">Explore</a>
         </div>
 
-    </aside>
+        <div class="socials">
+          <a href="https://github.com/Debodeep94" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/debodeep-banerjee-768a1416/" target="_blank">LinkedIn</a>
+          <a href="mailto:debodeepbanerjee33@gmail.com">Email</a>
+          <a href="https://thoughtsinnib.wordpress.com/" target="_blank">Blog</a>
+        </div>
+      </div>
 
-    <main class="content">
-        <h1>Hello 👋</h1>
+      <div class="hero-right">
+        <div class="portrait-frame">
+          <img src="me_1.JPG" alt="Portrait of Debodeep Banerjee" />
+        </div>
+        <div class="floating-card card-1">
+          <span>Current Focus</span>
+          <strong>Hybrid Human–Machine Learning</strong>
+        </div>
+        <div class="floating-card card-2">
+          <span>Based in</span>
+          <strong>Italy · Originally from Kolkata</strong>
+        </div>
+      </div>
+    </section>
 
+    <section id="about" class="section">
+      <div class="section-head">
+        <p class="section-label">About</p>
+        <h2>A researcher shaped by statistics, data science, and curiosity.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-card">
+          <p>
+            Hello, I’m Debodeep Banerjee, originally from Kolkata, India.
+            I am currently pursuing my PhD in Artificial Intelligence with the
+            University of Trento and the University of Pisa.
+          </p>
+        </div>
+
+        <div class="glass-card">
+          <p>
+            Before this, I completed a Master’s degree in Data Science from
+            Sapienza University of Rome and an MSc in Statistics from the
+            University of Madras.
+          </p>
+        </div>
+
+        <div class="glass-card">
+          <p>
+            My academic journey from statistics to AI has shaped a strong
+            interest in intelligent systems that combine algorithmic strength
+            with human judgment.
+          </p>
+        </div>
+
+        <div class="glass-card">
+          <p>
+            Outside academia, I enjoy literature, travelling, chess, and
+            writing poems and short stories as a way to reflect and create.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="section-head">
+        <p class="section-label">Research</p>
+        <h2>What I work on</h2>
+      </div>
+
+      <div class="research-grid">
+        <article class="feature-card large">
+          <p class="mini-label">Core Area</p>
+          <h3>Hybrid Human–Machine Learning</h3>
+          <p>
+            Exploring systems where humans and AI collaborate in learning,
+            reasoning, and decision processes rather than operating in isolation.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <p class="mini-label">Theme</p>
+          <h3>AI for Decision Making</h3>
+          <p>
+            Studying how intelligent models can support robust, interpretable,
+            and context-aware decisions.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <p class="mini-label">Perspective</p>
+          <h3>Human-Centered Intelligence</h3>
+          <p>
+            Keeping people in the loop where trust, usability, and judgment
+            matter as much as predictive performance.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="journey" class="section">
+      <div class="section-head">
+        <p class="section-label">Journey</p>
+        <h2>Academic and professional path</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span>Present</span>
+            <h3>PhD Researcher in Artificial Intelligence</h3>
+            <p>University of Trento and University of Pisa</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span>Previously</span>
+            <h3>AI Intern</h3>
+            <p>Baker Hughes (Nuovo Pignone Tecnologie)</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span>Previously</span>
+            <h3>Extracurricular Intern</h3>
+            <p>Project Consulting SRL — AI applications in video data</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span>Academic Foundation</span>
+            <h3>Master in Data Science</h3>
+            <p>Sapienza University of Rome</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span>Earlier</span>
+            <h3>MSc in Statistics</h3>
+            <p>University of Madras</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-card">
+        <p class="section-label">Contact</p>
+        <h2>Let’s connect.</h2>
         <p>
-        My name is Debodeep Banerjee. I am from Kolkata, India. Currently I am working as a PhD researcher in Artificial Intelligence at the University of Trento and University of Pisa.
+          For research, collaborations, teaching, or just a thoughtful conversation.
         </p>
 
-        <p>
-        Previously I completed my Master in Data Science from Sapienza University of Rome and MSc in Statistics from University of Madras.
-        </p>
-
-        <p>
-        My research focuses on Hybrid Human-Machine Learning and Decision Making.
-        </p>
-
-        <p>
-        Apart from academics I enjoy literature, travelling and chess.
-        </p>
-
-    </main>
-
-</div>
-
+        <div class="contact-links">
+          <a href="mailto:debodeepbanerjee33@gmail.com">debodeepbanerjee33@gmail.com</a>
+          <a href="https://github.com/Debodeep94" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/debodeep-banerjee-768a1416/" target="_blank">LinkedIn</a>
+          <a href="https://thoughtsinnib.wordpress.com/" target="_blank">Blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
