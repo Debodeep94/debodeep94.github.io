@@ -30,16 +30,11 @@ a:focus-visible{outline:1px dashed var(--text);outline-offset:4px}
 .sidebar{align-self:start;text-align:center}
 @media(min-height:940px){.sidebar{position:sticky;top:60px}}
 
-/* the engraving, hung like a small print; image + caption live in CSS so the HTML stays untouched */
+/* portrait, set in CSS so the HTML stays untouched */
 .identity::before{
-  content:"after A. von Werdt, Buchdruckwerkstatt, 1676";
-  display:block;width:240px;margin:0 auto 34px;
-  padding-top:calc(240px * 913 / 684 + 10px);
-  background:url("portrait.jpeg") top center / 240px auto no-repeat;
-  font-size:.66rem;line-height:1.4;color:var(--muted);font-style:italic;
-  transform:rotate(-1.5deg);
+  content:"";display:block;width:200px;aspect-ratio:218 / 340;margin:0 auto 30px;
+  background:url("face.png") center / contain no-repeat;
 }
-.identity:hover::before{transform:rotate(0)}
 h1{
   font-family:var(--mono);font-size:2.5rem;font-weight:400;line-height:1.15;
   letter-spacing:-.01em;margin:0 0 14px;
@@ -110,7 +105,7 @@ dd a{text-decoration:underline}
   .layout{grid-template-columns:1fr;gap:28px;padding:40px 22px 60px}
   .sidebar{position:static;padding-bottom:26px;border-bottom:1px dashed var(--line)}
   h1{font-size:2.1rem}
-  .identity::before{width:170px;padding-top:calc(170px * 913 / 684 + 8px);background-size:170px auto;margin-bottom:24px}
+  .identity::before{width:140px;margin-bottom:20px}
   .role br{display:none}
   .role{margin-bottom:20px}
   nav{flex-direction:row;flex-wrap:wrap;justify-content:center;gap:4px 18px}
@@ -122,7 +117,6 @@ dd a{text-decoration:underline}
 
 /* ---------- Motion ---------- */
 @media(prefers-reduced-motion:no-preference){
-  .identity::before{transition:transform .4s ease}
   nav a,main a{transition:color .15s}
   h1 a::after{animation:blink 1.1s steps(1) infinite}
 }
