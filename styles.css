@@ -35,7 +35,7 @@ a:focus-visible{outline:1px dashed var(--text);outline-offset:4px}
   content:"after A. von Werdt, Buchdruckwerkstatt, 1676";
   display:block;width:240px;margin:0 auto 34px;
   padding-top:calc(240px * 913 / 684 + 10px);
-  background:url("portrait.jpg") top center / 240px auto no-repeat;
+  background:url("portrait.jpeg") top center / 240px auto no-repeat;
   font-size:.66rem;line-height:1.4;color:var(--muted);font-style:italic;
   transform:rotate(-1.5deg);
 }
